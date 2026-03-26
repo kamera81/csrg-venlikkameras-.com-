@@ -1,0 +1,21 @@
+.hero{
+background:url('../images/kamera.jpg');
+background-size:cover;
+padding:120px;
+}
+
+.hero h1{
+font-size:50px;
+font-weight:bold;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:30px;
+padding:15px;
+border-radius:50%;
+}
