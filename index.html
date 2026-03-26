@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <!-- Burası HEAD Kısmı: Sitenin ayarları burada yapılır -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Güvenlik Sistemleri | Profesyonel Çözümler</title>
-    <!-- Bootstrap CSS (Tasarım Altyapısı) -->
+    <title>Güvenlik Pro | Kamera ve Alarm Sistemleri</title>
+    
+    <!-- Bootstrap CSS (Hazır tasarım kütüphanesi) -->
     <link href="https://cdn.jsdelivr.net" rel="stylesheet">
+    
+    <!-- Senin oluşturduğun style.css dosyasını buraya bağlıyoruz -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome (İkonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 </head>
 <body>
 
-    <!-- Menü (Navbar) -->
+    <!-- Menü Alanı -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">GÜVENLİK PRO</a>
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-shield-alt me-2"></i>GÜVENLİK PRO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#">Anasayfa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kamera Sistemleri</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Alarm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#urunler">Ürünler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hizmetler">Hizmetler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Giriş Alanı (Hero Section) -->
-    <header class="bg-light py-5 border-bottom">
-        <div class="container text-center py-5">
-            <h1 class="display-4 fw-bold">7/24 Kesintisiz Güvenlik</h1>
-            <p class="lead mb-4">Eviniz ve iş yeriniz için en gelişmiş kamera teknolojileri.</p>
-            <a href="#teklif" class="btn btn-primary btn-lg px-5">Ücretsiz Keşif İste</a>
+    <!-- Giriş (Hero) Alanı -->
+    <header>
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold">Eviniz Bizimle Güvende</h1>
+            <p class="lead">En son teknoloji gece görüşlü kamera sistemleri ve akıllı alarmlar.</p>
+            <div class="mt-4">
+                <a href="#iletisim" class="btn btn-primary btn-lg me-2">Teklif Al</a>
+                <a href="#urunler" class="btn btn-outline-light btn-lg">Ürünleri İncele</a>
+            </div>
         </div>
     </header>
 
+    <!-- Ürünler Başlangıç -->
+    <section id="urunler" class="container py-5">
+        <h2 class="text-center mb-5 fw-bold">Öne Çıkan Ürünler</h2>
+        <div class="row g-4">
+            <!-- 1. Ürün Kartı -->
+            <div class="col-md-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com" class="card-img-top" alt="IP Kamera">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">4K IP Kamera</h5>
+                        <p class="card-text text-muted">Gece görüşlü, su geçirmez dış mekan kamerası.</p>
+                        <button class="btn btn-primary">Detaylı Bilgi</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Diğer ürünleri buraya kopyalayarak çoğaltabilirsin -->
+        </div>
+    </section>
+
+    <!-- Footer (En Alt Kısım) -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Güvenlik Pro Yazılım. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Menülerin çalışması için gerekli) -->
     <script src="https://cdn.jsdelivr.net"></script>
 </body>
 </html>
