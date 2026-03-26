@@ -1,81 +1,114 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <!-- Burası HEAD Kısmı: Sitenin ayarları burada yapılır -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Güvenlik Pro | Kamera ve Alarm Sistemleri</title>
+    <title>Güvenlik Kamera Sistemleri | Profesyonel Çözümler</title>
     
-    <!-- Bootstrap CSS (Hazır tasarım kütüphanesi) -->
+    <!-- Bootstrap & Font Awesome -->
     <link href="https://cdn.jsdelivr.net" rel="stylesheet">
-    
-    <!-- Senin oluşturduğun style.css dosyasını buraya bağlıyoruz -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Font Awesome (İkonlar için) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Menü Alanı -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="fas fa-shield-alt me-2"></i>GÜVENLİK PRO
+            <a class="navbar-brand fw-bold text-danger" href="#">
+                <i class="fas fa-video me-2"></i>CSR GÜVENLİK
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#anasayfa">Anasayfa</a></li>
                     <li class="nav-item"><a class="nav-link" href="#urunler">Ürünler</a></li>
                     <li class="nav-item"><a class="nav-link" href="#hizmetler">Hizmetler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-danger text-white ms-lg-3 px-4" href="#iletisim">Teklif Al</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Giriş (Hero) Alanı -->
-    <header>
+    <!-- Hero Alanı -->
+    <section id="anasayfa" class="hero-section d-flex align-items-center text-white">
         <div class="container text-center">
-            <h1 class="display-3 fw-bold">Eviniz Bizimle Güvende</h1>
-            <p class="lead">En son teknoloji gece görüşlü kamera sistemleri ve akıllı alarmlar.</p>
-            <div class="mt-4">
-                <a href="#iletisim" class="btn btn-primary btn-lg me-2">Teklif Al</a>
-                <a href="#urunler" class="btn btn-outline-light btn-lg">Ürünleri İncele</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Ürünler Başlangıç -->
-    <section id="urunler" class="container py-5">
-        <h2 class="text-center mb-5 fw-bold">Öne Çıkan Ürünler</h2>
-        <div class="row g-4">
-            <!-- 1. Ürün Kartı -->
-            <div class="col-md-4">
-                <div class="card product-card h-100">
-                    <img src="https://images.unsplash.com" class="card-img-top" alt="IP Kamera">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">4K IP Kamera</h5>
-                        <p class="card-text text-muted">Gece görüşlü, su geçirmez dış mekan kamerası.</p>
-                        <button class="btn btn-primary">Detaylı Bilgi</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Diğer ürünleri buraya kopyalayarak çoğaltabilirsin -->
+            <h1 class="display-3 fw-bold mb-3">Güvenliğiniz Bizimle Başlar</h1>
+            <p class="lead mb-5">Düzce ve çevresinde profesyonel kamera ve alarm sistemleri kurulumu.</p>
+            <a href="#urunler" class="btn btn-danger btn-lg px-5 shadow">Ürünleri Gör</a>
         </div>
     </section>
 
-    <!-- Footer (En Alt Kısım) -->
-    <footer class="text-center">
+    <!-- Ürün Kartları Bölümü -->
+    <section id="urunler" class="py-5">
         <div class="container">
-            <p class="mb-0">&copy; 2024 Güvenlik Pro Yazılım. Tüm Hakları Saklıdır.</p>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Öne Çıkan Ürünlerimiz</h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Ürün 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com" class="card-img-top" alt="4K Kamera">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">4K Gece Görüşlü IP Kamera</h5>
+                            <p class="card-text text-muted small">Su geçirmez dış mekan gövdesi ve mobil izleme desteği.</p>
+                            <a href="#iletisim" class="btn btn-outline-danger w-100">Bilgi Al</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ürün 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com" class="card-img-top" alt="Alarm Sistemi">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Akıllı Ev Alarm Seti</h5>
+                            <p class="card-text text-muted small">Kablosuz sensörler ve telefon bildirimli merkezi panel.</p>
+                            <a href="#iletisim" class="btn btn-outline-danger w-100">Bilgi Al</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- İletişim Formu -->
+    <section id="iletisim" class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-4">
+                    <h2 class="fw-bold">Hemen Teklif Alın</h2>
+                    <p>Formu doldurun, uzman ekibimiz sizi arasın.</p>
+                </div>
+                <div class="col-md-8 bg-white p-5 rounded shadow">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control form-control-lg" placeholder="Adınız Soyadınız">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control form-control-lg" placeholder="Telefon Numaranız">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" placeholder="Mesajınız..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-danger btn-lg w-100">Gönder</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5 text-center">
+        <p>&copy; 2026 CSR Güvenlik Yazılımı. Tüm Hakları Saklıdır.</p>
     </footer>
 
-    <!-- Bootstrap JS (Menülerin çalışması için gerekli) -->
     <script src="https://cdn.jsdelivr.net"></script>
 </body>
 </html>
