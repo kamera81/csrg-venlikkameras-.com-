@@ -1,58 +1,33 @@
-/* Genel Ayarlar */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa; /* Hafif gri arka plan */
-}
-
-/* Üst Menü (Navbar) Tasarımı */
-.navbar {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Hafif gölge */
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    color: #e74c3c !important; /* Kurumsal kırmızı tonu */
-}
-
-/* Giriş Alanı (Hero Section) Güzelleştirme */
-header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+/* Hero Alanı Arka Planı */
+.hero-section {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
                 url('https://images.unsplash.com');
     background-size: cover;
     background-position: center;
-    color: white;
-    padding: 100px 0 !important;
 }
 
-/* Ürün Kartları (Cards) - İncelediğin sitedeki yapı */
+/* Başlık Altı Çizgisi */
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #dc3545;
+    margin-top: 10px;
+}
+
+/* Ürün Kartı Efekti (CSR Sitesindeki Gibi) */
 .product-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
 }
 
 .product-card:hover {
-    transform: translateY(-10px); /* Üzerine gelince yükselme efekti */
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
 }
 
-/* Buton Tasarımı */
-.btn-primary {
-    background-color: #e74c3c;
-    border-color: #e74c3c;
-    border-radius: 30px; /* Yuvarlak hatlar */
-    padding: 10px 25px;
-    font-weight: 600;
-}
-
-.btn-primary:hover {
-    background-color: #c0392b;
-}
-
-/* Alt Bilgi (Footer) */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 40px 0;
+/* Form Girişleri */
+.form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
