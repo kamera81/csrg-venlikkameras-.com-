@@ -1,62 +1,58 @@
+/* Genel Ayarlar */
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  margin: 0;
-  padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Hafif gri arka plan */
 }
 
+/* Üst Menü (Navbar) Tasarımı */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Hafif gölge */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #e74c3c !important; /* Kurumsal kırmızı tonu */
+}
+
+/* Giriş Alanı (Hero Section) Güzelleştirme */
 header {
-  background: #4CAF50;
-  color: white;
-  padding: 15px;
-  text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0 !important;
 }
 
-header input {
-  padding: 8px;
-  width: 200px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
+/* Ürün Kartları (Cards) - İncelediğin sitedeki yapı */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.urunler-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
+.product-card:hover {
+    transform: translateY(-10px); /* Üzerine gelince yükselme efekti */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-.urun-card {
-  background: white;
-  border-radius: 10px;
-  margin: 15px;
-  width: 200px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+/* Buton Tasarımı */
+.btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    border-radius: 30px; /* Yuvarlak hatlar */
+    padding: 10px 25px;
+    font-weight: 600;
 }
 
-.urun-card:hover {
-  transform: translateY(-5px);
+.btn-primary:hover {
+    background-color: #c0392b;
 }
 
-.urun-card img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.urun-card button {
-  margin-top: 10px;
-  padding: 8px 12px;
-  border: none;
-  background: #4CAF50;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.urun-card button:hover {
-  background: #45a049;
+/* Alt Bilgi (Footer) */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
 }
