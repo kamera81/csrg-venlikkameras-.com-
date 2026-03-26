@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Popüler Ürünler</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güvenlik Sistemleri | Profesyonel Çözümler</title>
+    <!-- Bootstrap CSS (Tasarım Altyapısı) -->
+    <link href="https://cdn.jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Popüler Ürünler</h1>
-    <input type="text" id="arama" placeholder="Ürün ara..." onkeyup="urunAra()">
-  </header>
 
-  <div id="urunlerDiv" class="urunler-grid"></div>
+    <!-- Menü (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">GÜVENLİK PRO</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kamera Sistemleri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Alarm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <script src="script.js"></script>
+    <!-- Giriş Alanı (Hero Section) -->
+    <header class="bg-light py-5 border-bottom">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">7/24 Kesintisiz Güvenlik</h1>
+            <p class="lead mb-4">Eviniz ve iş yeriniz için en gelişmiş kamera teknolojileri.</p>
+            <a href="#teklif" class="btn btn-primary btn-lg px-5">Ücretsiz Keşif İste</a>
+        </div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net"></script>
 </body>
 </html>
