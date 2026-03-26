@@ -1,33 +1,48 @@
-/* Hero Alanı Arka Planı */
-.hero-section {
-    height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+/* Renk Ayarları */
+:root {
+    --ana-renk: #003366; /* Koyu Lacivert */
+    --vurgu-renk: #007bff; /* Mavi */
+}
+
+.top-bar {
+    background-color: var(--ana-renk);
+    font-size: 14px;
+}
+
+.navbar-brand {
+    color: var(--ana-renk) !important;
+    font-size: 24px;
+}
+
+/* Giriş Görseli Alanı */
+.hero-banner {
+    height: 500px;
+    background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), 
                 url('https://images.unsplash.com');
     background-size: cover;
     background-position: center;
 }
 
-/* Başlık Altı Çizgisi */
-.underline {
-    width: 60px;
-    height: 4px;
-    background-color: #dc3545;
-    margin-top: 10px;
+/* Hizmet Kutuları */
+.service-box {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: var(--ana-renk);
 }
 
-/* Ürün Kartı Efekti (CSR Sitesindeki Gibi) */
-.product-card {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    cursor: pointer;
+.service-box:hover {
+    background-color: var(--ana-renk);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.product-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+.service-box i {
+    color: var(--vurgu-renk);
 }
 
-/* Form Girişleri */
-.form-control:focus {
-    border-color: #dc3545;
-    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+.service-box:hover i {
+    color: white;
 }
