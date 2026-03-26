@@ -1,48 +1,29 @@
-/* Renk Ayarları */
 :root {
-    --ana-renk: #003366; /* Koyu Lacivert */
-    --vurgu-renk: #007bff; /* Mavi */
+    --primary-color: #1e73be; /* O sitedeki mavi tonu */
+    --dark-color: #2c3e50;
 }
 
-.top-bar {
-    background-color: var(--ana-renk);
-    font-size: 14px;
-}
+body { font-family: 'Inter', sans-serif; color: #333; }
 
-.navbar-brand {
-    color: var(--ana-renk) !important;
-    font-size: 24px;
-}
+.top-header { background-color: var(--primary-color); font-size: 14px; }
 
-/* Giriş Görseli Alanı */
-.hero-banner {
-    height: 500px;
-    background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), 
+/* Hero Alanı (Görseli kendin değiştirebilirsin) */
+.main-hero {
+    height: 600px;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
                 url('https://images.unsplash.com');
     background-size: cover;
     background-position: center;
 }
 
-/* Hizmet Kutuları */
-.service-box {
-    background: white;
-    border: 1px solid #eee;
-    border-radius: 8px;
+.feature-box {
+    border-radius: 15px;
     transition: all 0.3s ease;
-    color: var(--ana-renk);
 }
 
-.service-box:hover {
-    background-color: var(--ana-renk);
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+.feature-box:hover {
+    transform: translateY(-10px);
+    border-bottom: 5px solid var(--primary-color);
 }
 
-.service-box i {
-    color: var(--vurgu-renk);
-}
-
-.service-box:hover i {
-    color: white;
-}
+.btn-primary { background-color: var(--primary-color); border: none; padding: 12px 30px; }
