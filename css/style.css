@@ -17,14 +17,7 @@ header nav a {
   text-decoration: none;
 }
 
-.blog-list article {
-  border-bottom: 1px solid #ccc;
-  padding: 15px 0;
-}
 
-.blog-list article h2 a {
-  color: #003366;
-  text-decoration: none;
 }
 
 footer {
