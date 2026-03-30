@@ -34,3 +34,11 @@ footer {
   text-align: center;
   margin-bottom: 15px;
 }
+#iletisim-harita, #harita {
+  margin: 30px 0;
+}
+
+#iletisim-harita h2, #harita h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
