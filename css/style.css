@@ -30,3 +30,38 @@ border-radius:50%;
     float: left;
     margin: 10px 20px;
 }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background: #003366;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.blog-list article {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.blog-list article h2 a {
+  color: #003366;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 10px;
+  margin-top: 20px;
+}
