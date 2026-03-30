@@ -24,4 +24,9 @@ border-radius:50%;
     height: auto;
     display: block;
     margin: 10px auto;
+}.logo {
+    width: 160px;
+    height: auto;
+    float: left;
+    margin: 10px 20px;
 }
