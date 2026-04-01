@@ -1,72 +1,240 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSR Güvenlik Kamera Sistemleri | Düzce</title>
+  <meta name="description" content="CSR Güvenlik Kamera Sistemleri. Kamera kurulumu, alarm sistemleri ve uzaktan izleme hizmetleri.">
+  <style>
+    /* GENEL */
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:Arial, sans-serif; background:#f5f5f5; scroll-behavior:smooth;}
+    a {text-decoration:none;}
 
-header nav {
-  background: #003366;
-  padding: 10px;
-  display: flex;
-  gap: 20px;
-}
+    /* HEADER */
+    header div{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 20px;
+      background:#111;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    header img {height:60px;}
+    nav a{
+      color:white;
+      margin-left:20px;
+      font-weight:bold;
+      transition:.3s;
+    }
+    nav a:hover{color:#00c3ff;}
 
-header nav a {
-  color: white;
-  text-decoration: none;
-}
+    /* HERO */
+    .hero{
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1558002038-1055907df827') no-repeat center center;
+      background-size:cover;
+      color:white;
+      padding:120px 20px;
+      text-align:center;
+      animation:fadeIn 1s ease;
+    }
+    .hero h1{margin-bottom:15px; font-size:36px;}
+    .hero p{font-size:18px;}
+    .btn{
+      background:#25D366;
+      padding:15px 25px;
+      color:white;
+      border-radius:5px;
+      display:inline-block;
+      margin-top:20px;
+      transition:.3s;
+    }
+    .btn:hover{background:#1ebe57;}
 
+    /* BÖLÜMLER */
+    .section{padding:60px 20px; text-align:center;}
+    .section h2{margin-bottom:20px;}
+    .cards{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      margin-top:30px;
+    }
+    .card{
+      background:white;
+      padding:25px;
+      width:260px;
+      border-radius:10px;
+      box-shadow:0 0 15px rgba(0,0,0,0.1);
+      transition:.3s;
+    }
+    .card:hover{transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.2);}
+    .dark{background:#111; color:white;}
 
-}
+    /* İLETİŞİM */
+    #iletisim{
+      max-width:600px;
+      margin:50px auto;
+      padding:20px;
+      background:#fff;
+      border-radius:10px;
+      box-shadow:0 0 15px rgba(0,0,0,0.1);
+    }
+    #iletisim input, #iletisim textarea{
+      width:100%;
+      padding:10px;
+      margin:10px 0;
+      border-radius:5px;
+      border:1px solid #ccc;
+    }
+    #iletisim button{
+      padding:10px 20px;
+      background:#00c3ff;
+      color:#fff;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+      transition:.3s;
+    }
+    #iletisim button:hover{background:#009acc;}
 
-footer {
-  text-align: center;
-  background: #eee;
-  padding: 10px;
-  margin-top: 20px;
-}
-#iletisim-harita {
-  margin: 30px 0;
-}
+    /* FOOTER */
+    footer{
+      background:#000;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
 
-#iletisim-harita h2 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-#iletisim-harita, #harita {
-  margin: 30px 0;
-}
+    /* WHATSAPP SABİT BUTON */
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:15px 20px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:bold;
+      z-index:999;
+      box-shadow:0 4px 6px rgba(0,0,0,0.3);
+      transition:.3s;
+    }
+    .whatsapp:hover{background:#1ebe57;}
 
-#iletisim-harita h2, #harita h2 {
-  text-align: center;
-  margin-bottom: 15px;
-}
+    /* ANİMASYON */
+    @keyframes fadeIn{from{opacity:0} to{opacity:1}}
 
-.logo {
-  width: 200px;      /* Logo genişliği */
-  max-width: 50%;    /* Ekran küçülürse otomatik küçülür */
-  height: auto;      /* Orantıyı bozmadan büyütür */
-  display: block;    /* Daha düzgün yerleşim için */
-  margin: 0 auto;    /* Ortalamak istersen */
-}
-.velora-sign{
-    text-align:center;
-    margin:40px 0;
-}
+    /* MOBİL */
+    @media screen and (max-width:768px){
+      header div{flex-direction:column; align-items:flex-start;}
+      nav{margin-top:10px;}
+      nav a{margin:5px 10px 0 0;}
+      .cards{flex-direction:column; align-items:center;}
+    }
+  </style>
+</head>
 
-.velora-sign a{
-    color:#ffffff; /* BEYAZ */
-    font-size:14px;
-    text-decoration:none;
-    font-weight:500;
-    letter-spacing:1px;
-    opacity:0.85;
-    transition:0.4s;
-}
+<body>
 
-.velora-sign a:hover{
-    color:#ffffff;
-    opacity:1;
-    text-shadow:0 0 12px rgba(255,255,255,0.9);
-}
+  <!-- HEADER -->
+  <header>
+    <div>
+      <img src="logo.png" alt="CSR Güvenlik Logo">
+      <nav>
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#urunler">Ürünler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="anasayfa">
+    <h1>7/24 Güvenlik Kamera Sistemleri</h1>
+    <p>Profesyonel Kurulum • Alarm • Uzaktan İzleme</p>
+    <a href="https://wa.me/905417629405" class="btn">WhatsApp Teklif Al</a>
+  </section>
+
+  <!-- HAKKIMIZDA -->
+  <section class="section">
+    <h2>CSR DÜZCE Güvenlik Kamera Kurulumu</h2>
+    <p>DÜZCE genelinde profesyonel olarak güvenlik kamera kurulumu hizmeti sunuyoruz. Ev, işyeri ve ofisler için IP kamera, analog kamera ve alarm sistemleri kurulumu yapıyoruz.</p>
+    <p>Düzce Merkez ve tüm ilçeler çevre iller dahil hızlı servis ve uygun fiyat garantisi ile hizmet veriyoruz.</p>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section class="section" id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>📷 Kamera Sistemleri</h3>
+        <p>IP ve Analog güvenlik kamera kurulumu</p>
+      </div>
+      <div class="card">
+        <h3>🚨 Alarm Sistemleri</h3>
+        <p>Ev ve işyeri alarm çözümleri</p>
+      </div>
+      <div class="card">
+        <h3>📱 Uzaktan İzleme</h3>
+        <p>Telefonunuzdan canlı takip</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜRÜNLER -->
+  <section class="section" id="urunler">
+    <h2>Popüler Ürünler</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>4'lü Kamera Seti</h3>
+        <p>Gece görüşlü HD kamera sistemi</p>
+        <a href="https://wa.me/905417629405" class="btn">Fiyat Sor</a>
+      </div>
+      <div class="card">
+        <h3>8'li Kamera Seti + Alarm</h3>
+        <p>Ev ve işyeri için komple güvenlik çözümü</p>
+        <a href="https://wa.me/905417629405" class="btn">Fiyat Sor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="section" id="iletisim">
+    <h2>İletişim</h2>
+    <form action="mailto:veloradijital.ajans@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="isim" placeholder="Adınız" required>
+      <input type="email" name="email" placeholder="E-posta" required>
+      <textarea name="mesaj" placeholder="Mesajınız" rows="5" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 CSR Güvenlik Kamera Sistemleri</p>
+    <p>Telefon: <a href="tel:+905417629405" style="color:#00ffcc;">0541 762 94 05</a></p>
+    <p style="margin-top:12px; font-size:14px; font-weight:bold; color:#00e5ff;">
+      SITE TASARIMI: VELORA AJANS’A AİTTİR | 
+      <a href="mailto:veloradijital.ajans@gmail.com" style="color:#00e5ff; text-decoration:none;">📧 veloradijital.ajans@gmail.com</a>
+    </p>
+  <a href="mailto:veloradijital.ajans@gmail.com" style="color:#00e5ff; text-decoration:none;">📧 veloradijital.ajans@gmail.com </a>
+    </p>
+    <div class="velora-sign">
+  <a href="https://muazzez81.github.io/Velora-aJans/" target="_blank">
+      Designed by <strong>VELORA AJANS</strong>
+  </a>
+  </footer>
+
+  <!-- WHATSAPP SABİT BUTON -->
+  <a href="https://wa.me/905417629405" class="whatsapp">WhatsApp</a>
+
+</body>
+</html>
